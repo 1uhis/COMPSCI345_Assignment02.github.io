@@ -1,0 +1,319 @@
+﻿*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.custom-color{
+    color: #B32428;
+  }
+
+.custom-background-color{
+    color: #B32428;
+}
+
+.tophome{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+li, a, button{
+    font-family:"Quicksand", sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:#000000;
+    text-decoration:none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 17px 3%;
+    background-color: #F5F2E9
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navi{
+    list-style: none;
+    width: 100%;
+    margin:auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navi li{
+    list-style: none;
+    display:inline-block;
+    margin:0 50px;
+    position: relative;
+}
+
+.navi li a{
+    text-decoration: none;
+}
+
+.navi li a::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    background:#B32428;
+}
+
+.navi li a:hover::after{
+    width:100%
+}
+
+.signup button {
+    margin-left: 20px;
+    background-color:transparent;
+    color:#000000;
+    padding: 9px 25px;
+    border: 2px solid #B32428;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.signup button:hover{
+    border: 2px solid #B32428;
+    color: #680003;
+}
+
+.homepage{
+    font-family:"Quicksand", sans-serif;
+    width:100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #F5F2E9;
+}
+
+.homepage h1{
+    font-size: 75px;
+    margin-top: 80px;
+}
+
+.homepage p{
+    margin: 30px auto;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 47px;
+}
+
+.homepage button {
+    margin-left: 20px;
+    background:transparent;
+    color:#F5F2E9;
+    padding: 9px 25px;
+    border: 2px solid #B32428;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.homepage span{
+    background: #B32428;
+    height: 100%;
+    width:0;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.homepage button:hover span{
+    width:100%;
+}
+
+.homepage button:hover{
+    border: none;
+}
+
+.intro{
+    font-family:"Quicksand", sans-serif;
+    background-color: #F5F2E9;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+.intro h1{
+    font-size: 55px;
+    font-weight: 100;
+    margin-bottom: 15px;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+
+.intro p{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding-left: 150px;
+}
+
+.intro img{
+    padding-left: 1100px;
+}
+
+.footer{
+    font-family:"Quicksand", sans-serif;
+    background-color: #B32428;
+    color:#F5F2E9;
+    padding: 50px;
+}
+
+.container{
+    max-width: 1700px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 20%;
+    padding: 0 15px;
+}
+
+.col h3{
+    font-size:40px;
+    font-weight:100;
+    margin-bottom: 10px;
+}
+
+.col h4{
+    font-size: 30px;
+    font-weight: 50;
+    margin-bottom:10px;
+}
+
+.col p{
+    margin-bottom: 5px;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    display:none;
+}
+
+.modal-content{
+    width: 900px;
+    height: 900px;
+    background-color: #F5F2E9;
+    border-radius: 50px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.modal-content h1{
+    font-family:"Quicksand", sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    margin-top:20px;
+}
+
+.modal-content p{
+    font-family:"Quicksand", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+hr{
+    margin-top:20px;
+    width: 90%;
+    margin-left:45px;
+    border:none;
+    height:1px;
+    background:#B32428;
+}
+
+.close{
+    font-family:"Quicksand", sans-serif;
+    position: absolute;
+    right: 30px;
+    top:10px;
+    font-size: 50px;
+    font-weight: 100;
+    cursor:pointer;
+    border: none;
+    background: none;
+}
+
+.username{
+    text-align: center;
+    font-family:"Quicksand", sans-serif;
+    margin-top:20px;
+    font-size: 30px;
+}
+
+.useraddress{
+    text-align: center;
+    font-family:"Quicksand", sans-serif;
+    font-size: 30px;
+}
+
+.usercontacts{
+    text-align: center;
+    font-family:"Quicksand", sans-serif;
+    font-size: 30px;
+}
+
+label{
+    cursor:pointer;
+    display: inline-block;
+    text-align: right;
+    width: 300px;
+}
+
+input[type=text]{
+    font-family:"Quicksand", sans-serif;
+    width: 50%;
+    height: 45px;
+    margin: 20px 20px 15px 50px;
+}
+
+.submit button {
+    margin-left: 400px;
+    margin-top:20px;
+    color:#000000;
+    padding: 9px 25px;
+    border: 2px solid #B32428;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+
+.submit button:hover{
+    color: #B32428;
+}

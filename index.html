@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"><!-- Google Fonts -->
+    <title>Carbon Tiptoe!</title>
+</head>
+<body>
+    <!-- Homepage -->
+    <div class="tophome">
+        <header>
+            <!-- Logo and navi bar -->
+            <img class="logo" style="max-width:140px;width:100%" src="Logo.PNG" alt="logo"/>
+            <nav>
+                <ul class="customer-color navi">
+                    <li><a href="#home" class="navibutton">HOME</a></li>
+                    <li><a href="#calculator" class="navibutton">CALCULATOR</a></li>
+                    <li><a href="#contact_us" class="navibutton">Contact US</a></li>
+                </ul>
+            </nav>
+            <!-- Sign up buttom -->
+            <div id="trigger-modal" class="signup customer-color">
+                <button onclick= "display()">Sign up</button>
+            </div>
+        </header>
+        <!-- Homepage text -->
+        <div class="homepage">
+            <h1>Welcome to Carbon Tiptoe!</h1>
+            <p>Your best carbon footprint calculator website.</p>     
+            <div>
+                <button type="button"><span class="custom-background-color"></span>Learn more</button>
+                <button type="button"><span class="custom-background-color"></span>Calculate</button>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Homepage info about CT-->
+    <div class="intro">
+        <h1 class="custom-color">Carbon Tiptoe is dedicated to<br>providing users with the best<br>carbon footprint calculator.</h1>
+        <p>We lead businesses with our system of carbon footprint<br>calculator.We give them the science-based tools, actions<br>and evidence to make real progress. We are businesses<br>working together to sustain the future of our environment<br>and economy. Step with us!</p>
+        <img src="Logo.png" width="1800px" height="300px">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer custom-background-color">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Carbon<br>TipToe</h3>
+                    <p>Your best carbon<br>footprint calculator.</p>
+                </div>
+                <div class="col">
+                    <h4>Explore</h4>
+                    <p>Home</p>
+                    <p>Calculator</p>
+                    <p>Contact US</p>
+                    <p>Sign up</p>
+                </div>
+                <div class="col">
+                    <h4>Visit</h4>
+                    <p>211 Lavender Court,<br>Meadowbank,<br>Auckland 1072</p>
+                </div>
+                <div class="col">
+                    <h4>Follow</h4>
+                    <p>Instagram</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>LikedIn</p>
+                </div>
+                <div class="col">
+                    <h4>Legal</h4>
+                    <p>Terms</p>
+                    <p>Privacy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal section -->
+    <div id='ct-form' class="modal">
+        <form>
+            <div class="modal-content">
+                <button onclick= "dispear()" class="close custom-color" >&times;</button>
+                <h1>Registration</h1>
+                <p>Join us now and start your journey.</p>
+                <hr class="custom-background-color">
+                <div>
+                        <div id='userDetails' class="username">
+                            <form>
+                                <label for="GivenName">Given name</label>
+                                <input type="text" placeholder="Enter your Given name here"><br>
+                                <label for="Surname">Surname</label>
+                                <input type="text" placeholder="Enter your Surname here"><br>
+                                <label for="Username">Username</label>
+                                <input type="text" placeholder="Enter your Username here"><br>
+                                <label for="Password">Password</label>
+                                <input type="text" placeholder="Enter your Password here">
+                            </form>
+                        </div>
+                        <div id='addresses' class="useraddress">
+                            <form>
+                                <label for="HomeAddress">Home address</label>
+                                <input type="text" placeholder="Enter your Home address here"><br>
+                                <label for="WorkAddress">Work address</label>
+                                <input type="text" placeholder="Enter your Work address here">
+                            </form>
+                        </div>
+                        <div id='contacts' class="usercontacts">
+                            <form>
+                                <label for="MobileNumber">Mobile number</label>
+                                <input type="text" placeholder="Enter your Mobile number here"><br>
+                                <label for="Email">Email</label>
+                                <input type="text" placeholder="Enter your Email here"><br>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="submit">
+                            <button onclick= "dispear()">Submit</button>
+                        </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+ 
